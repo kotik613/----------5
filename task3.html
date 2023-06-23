@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><TITLE>Математичні функції й константи</TITLE></HEAD>
+<BODY>
+    <script>
+        document.write(' КОНСТАНТИ<br>');
+        document.write(' 1. Значення константи е = 2.718281828459045<br>');
+        document.write(' 2. Значення константи π = 3.141592653589793<br>');
+        document.write(' 3. Десятковий логарифм постійної Ейлера (е) = 0.4342944819032518<br>');
+        document.write(' 4. Двійковий логарифм постійної Ейлера (е) = 1.4426950408889634<br>');
+        document.write(' 5. Натуральний логарифм числа 10 = 2.302585092994046<br>');
+        document.write(' 6. Натуральний логарифм числа 2 = 0.6931471805599453<br>');
+        document.write(' 7. Корінь квадратний із двох = 1.4142135623730951<br>');
+        document.write(' 8. Корінь квадратний з однієї другої = 0.7071067811865476 <br>');
+        document.write(' ФУНКЦІЇ <br>');
+        document.write(' 14.Натуральний логарифм від e^2: y = 2 <br>');
+        document.write(' 15.Результат обчислення десяткового логарифма від числа 100: y = 2<br>');
+        document.write(' 16.Результат обчислення двійкового логарифма від числа 8: y = 3 <br>');
+        document.write(' 17.Тангенс 45 градусів (з округленням): y = 1 <br>');
+        document.write(' 18.Результат округлення числа 1,00123 у більшу сторону: y = 2 <br>');
+        document.write(' РЕЗУЛЬТАТИ ОБЧИСЛЕНЬ <br>');
+    function showText1() {
+        var result = Math.log(Math.exp(2));
+        // var y = result.toFixed(2); 
+        alert('y = '+result);}
+
+        function showText2() {
+         var result = Math.log10(100);
+        //  var y = result.toFixed(2);
+        alert('y = '+result);}
+
+        function showText3() {
+        var result = Math.log2(8);
+        // var y = result.toFixed(2);
+        alert('y = '+result);}
+
+        function showText4() {
+        var radians = Math.PI / 180; 
+        var result = Math.tan(45 * radians);
+        var y = result.toFixed(2);
+        alert('y = '+y);}
+
+        function showText5() {
+        var number = 1.00123;
+        var result = Math.ceil(number);
+        alert('y = '+result);}
+      
+      
+      
+      
+      </script>
+   
+<FORM name="frm">
+<INPUT type="button" value="14"
+onclick= "showText1()">
+<INPUT type="button" value="15"
+onclick= "showText2()">
+<INPUT type="button" value="16"
+onclick= "showText3()">
+<INPUT type="button" value="17"
+onclick= "showText4()">
+<INPUT type="button" value="18"
+onclick= "showText5()">
+</FORM>
+<a href="task2.html"><button >Завдання 2</button></a>
+<a href="task4.html"><button >Завдання 4</button></a>
+</BODY>
+</HTML>
